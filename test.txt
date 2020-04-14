@@ -1,0 +1,29 @@
+# Find out the unique variables that causes accidents
+data['PURPOSE_OF_FLIGHT'].unique()
+
+
+
+# Replacing variables with numeric representation
+data['PURPOSE_OF_FLIGHT'].replace({'N/A': 0,
+                                  'Personal': 1,
+                                  'Instructional': 2,
+                                  'Ferry': 3,
+                                  'Flight Test': 4,
+                                  'Aerial Application': 5,
+                                  'Air Race/Show': 6,
+                                  'Business': 7,
+                                  'Positioning': 8,
+                                  'Unknown': 9,
+                                  'Skydiving': 10,
+                                  'External Load': 11,
+                                  'Public Aircraft - Local': 12,
+                                  'Glider Tow': 13,
+                                  'Public Aircraft - State': 14,
+                                  'Public Aircraft': 15,
+                                  'Other Work Use': 16,
+                                  'Air Drop': 17,
+                                  'Aerial Observation': 18,
+                                  'Banner Tow': 19,
+                                  'Public Aircraft - Federal': 20,
+                                  'Executive/Corporate': 21,
+                                  'Firefighting': 22,})
